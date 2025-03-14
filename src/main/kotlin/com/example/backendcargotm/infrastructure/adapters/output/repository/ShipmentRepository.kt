@@ -7,5 +7,5 @@ import java.util.UUID
 
 @Repository
 interface ShipmentRepository : CrudRepository<ShipmentEntity, UUID> {
-
+    fun getAllShipments(): Iterable<ShipmentEntity>
 }

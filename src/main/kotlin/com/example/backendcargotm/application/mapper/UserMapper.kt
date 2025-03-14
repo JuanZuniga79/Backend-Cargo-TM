@@ -1,4 +1,4 @@
-package com.example.backendcargotm.infrastructure.adapters.mapper
+package com.example.backendcargotm.application.mapper
 
 import com.example.backendcargotm.infrastructure.dto.user.CreateUserDTO
 import com.example.backendcargotm.infrastructure.entities.RoleEntity

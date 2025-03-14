@@ -5,5 +5,6 @@ data class ResponseProductDTO(
     val name: String,
     val fragile: Boolean,
     val price: Double,
+    val quantity: Int,
     val productType: String,
 )

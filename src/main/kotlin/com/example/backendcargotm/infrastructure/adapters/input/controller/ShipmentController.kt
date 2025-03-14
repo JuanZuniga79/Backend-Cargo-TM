@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController
 class ShipmentController(private val service: ShipmentServices) {
 
     @GetMapping("")
-    fun getAllShipments() : ResponseEntity<Response<Iterable<ResponseShipmentDTO>>>{
+    suspend fun getAllShipments() : ResponseEntity<Response<Iterable<ResponseShipmentDTO>>>{
         try {
             val data = service.getAllShipments();
             val response = Response.Builder<Iterable<ResponseShipmentDTO>>()

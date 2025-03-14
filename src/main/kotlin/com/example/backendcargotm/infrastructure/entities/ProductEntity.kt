@@ -10,6 +10,7 @@ data class ProductEntity(
     val name: String,
     val fragile: Boolean,
     val price: Double,
+    val quantity: Int,
     @ManyToOne(fetch = FetchType.LAZY)
     val productTypeEntity: ProductTypeEntity
 )

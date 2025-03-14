@@ -17,4 +17,6 @@ data class ShipmentEntity(
     var deliveryDate: LocalDate,
     @ManyToOne(fetch = FetchType.LAZY)
     val vehicle: VehicleEntity,
+    @OneToMany(fetch = FetchType.LAZY)
+    val products: List<ProductEntity>,
 )

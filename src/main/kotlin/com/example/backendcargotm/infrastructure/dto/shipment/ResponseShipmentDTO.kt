@@ -1,6 +1,7 @@
 package com.example.backendcargotm.infrastructure.dto.shipment
 
 import com.example.backendcargotm.infrastructure.dto.product.ResponseProductDTO
+import com.example.backendcargotm.infrastructure.entities.ProductEntity
 import java.time.LocalDate
 
 data class ResponseShipmentDTO(
@@ -12,5 +13,5 @@ data class ResponseShipmentDTO(
     val vehicleIdentification: String,
     val vehicleType: String,
     val vehicleTypeCode: String,
-    val productList: List<ResponseProductDTO>
+    val productList: List<ProductEntity>
 )
